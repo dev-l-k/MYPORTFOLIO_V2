@@ -14,8 +14,8 @@
         [data-theme="light"]{
             --bg-color: #f8fafc;
             --card-bg: #ffffff;
-            --text-main: #0f172a;
-            --text-muted: #64748b;
+            --text-main: black;
+            --text-muted: rgba(0,0,0,0.6);
             --accent: #0284c7;
             --border-color: rgba(15,23,42,0.12);
 
@@ -211,6 +211,7 @@
     right: 1rem;
     top: 50%;
     transform: translateY(-50%);
+    margin-left: 10px;
 }
         .timeline{
             position: relative;
