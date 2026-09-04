@@ -14,8 +14,8 @@
         [data-theme="light"]{
             --bg-color: #f8fafc;
             --card-bg: #ffffff;
-            --text-main: black;
-            --text-muted: rgba(0,0,0,0.6);
+            --text-main: rgba(0,0,0,0.8);
+            --text-muted: rgba(0,0,0,0.8);
             --accent: #0284c7;
             --border-color: rgba(15,23,42,0.12);
 
