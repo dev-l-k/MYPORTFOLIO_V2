@@ -1,31 +1,42 @@
-const themeToggle = document.getElementById("theme-toggle");
-const savedTheme = localStorage.getItem("theme");
-if (savedTheme === "light"){
-    document.documentElement.dataset.theme ="light";
-    themeToggle.textContent="☀️"
-
-}
-themeToggle.addEventListener("click",() => {
-    const isLight = document.documentElement.dataset.theme === "light";
-    if (isLight){
-        document.documentElement.removeAttribute("data-theme");
-        themeToggle.textContent="🌙";
-        localStorage.setItem("theme","dark");
-    }else{
-        document.documentElement.dataset.theme="light";
-        themeToggle.textContent="☀️";
-        localStorage.setItem("theme","light");
-    }
-
-});
-const observer = new IntersectionObserver(("entries") => {
-    CustomElementRegistry.forEach((entry) => {
-        if (entry.isIntersecting){
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target);
-
-        }
+document.addEventListener("DOMContentLoaded", () => {
+  const themeToggle = document.getElementById("theme-toggle");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      localStorage.setItem(
+        "theme",
+        document.body.classList.contains("dark-mode") ? "dark" : "light"
+      );
     });
-    {threshold: 0.15;}
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark-mode");
+    }
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const target = document.querySelector(link.getAttribute("href"));
+      if (!target) return;
+      event.preventDefault();
+      target.scrollIntoView({ behavior: "smooth" });
+    });
+  });
+
+  const elements = document.querySelectorAll(".reveal");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  });
+  elements.forEach((element) => {
+    observer.observe(element);
+  });
+
+  const navbar = document.querySelector("nav");
+  window.addEventListener("scroll", () => {
+    if (!navbar) return;
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
+  });
 });
-document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
