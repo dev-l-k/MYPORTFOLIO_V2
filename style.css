@@ -201,6 +201,17 @@
         .story-box p:last-child{
             margin-bottom: 0;
         }
+        nav {
+            position: sticky;
+            top: 0;
+        }
+
+.theme-toggle {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
         .timeline{
             position: relative;
             margin-top:1.5rem;
@@ -257,8 +268,10 @@
 
         nav.scrolled {
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        
         }
-        }
+
+        
         .skills-grid{
             display:grid;
             grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
