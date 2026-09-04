@@ -22,7 +22,10 @@ const observer = new IntersectionObserver(("entries") => {
     CustomElementRegistry.forEach((entry) => {
         if (entry.isIntersecting){
             entry.target.classList.add("visible");
-            observer.un
+            observer.unobserve(entry.target);
+
         }
-    })
-})
+    });
+    {threshold: 0.15;}
+});
+document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
