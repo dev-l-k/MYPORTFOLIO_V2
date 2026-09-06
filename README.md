@@ -14,17 +14,17 @@ Hi, I'm Dev, a student developer interested in web development, programming, rob
 
 ## Preview
 
-![Portfolio Preview](.assets/1.jpg)
+![Portfolio Preview](./assets/1.jpg)
 ---
-![Portfolio Preview](.assets/2.jpg)
+![Portfolio Preview](./assets/2.jpg)
 ---
-![Portfolio Preview](.assets/3.jpg)
+![Portfolio Preview](./assets/3.jpg)
 ---
-![Portfolio Preview](.assets/4.jpg)
+![Portfolio Preview](./assets/4.jpg)
 ---
-![Portfolio Preview](.assets/5.jpg)
+![Portfolio Preview](./assets/5.jpg)
 ---
-![Portfolio Preview](.assets/6.jpg)
+![Portfolio Preview](./assets/6.jpg)
 ---
 
 ## Features
