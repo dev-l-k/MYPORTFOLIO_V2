@@ -10,6 +10,7 @@ A modern, responsive personal portfolio built with HTML, CSS & JavaScript.
 ## About
 Hi, I'm Dev, a student developer interested in web development, programming, robotics, and building creative projects.
 
+I created this portfolio to have one place where I can showcase my work, skills, and development journey
 ---
 
 ## Preview
