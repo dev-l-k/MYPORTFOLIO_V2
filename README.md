@@ -2,8 +2,30 @@
 
 A modern, responsive personal portfolio built with HTML, CSS & JavaScript.
 
-🌐 Live: https://dev-l-k.github.io/MYPORTFOLIO_V2/  
+🌐 Live: https://me.devlkakkoth.me  
 💻 GitHub:https://github.com/dev-l-k/MYPORTFOLIO_V2
+
+---
+
+## About
+Hi, I'm Dev, a student developer interested in web development, programming, robotics, and building creative projects.
+
+---
+
+## Preview
+
+![Portfolio Preview](.img/1.jpg)
+---
+![Portfolio Preview](.img/2.jpg)
+---
+![Portfolio Preview](.img/3.jpg)
+---
+![Portfolio Preview](.img/4.jpg)
+---
+![Portfolio Preview](.img/5.jpg)
+---
+![Portfolio Preview](.img/6.jpg)
+---
 
 ## Features
 -  Responsive design
@@ -11,11 +33,14 @@ A modern, responsive personal portfolio built with HTML, CSS & JavaScript.
 -  Smooth animations
 -  Skills & projects showcase
 
+---
+
 ## Tech Stack
 - HTML
 - CSS
 - JS
 - Github Pages
 
+---
 
 ## Developer dev-l-k
